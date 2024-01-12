@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/footerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_of_footer"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        style="@android:style/ButtonBar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            style="@android:style/ButtonBar"
+            android:titleTextColor="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/home"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_home_holo_dark"
+                android:contentDescription="@string/home" />
+
+            <ImageButton
+                android:id="@+id/inbox"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/inbox"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_message_holo_dark"
+                android:contentDescription="@string/inbox" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="@string/profile"
+                app:srcCompat="@drawable/ic_profile_holo_dark"
+                android:contentDescription="@string/profile" />
+
+            <ImageButton
+                android:id="@+id/host"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:text="@string/switch_role"
+                app:srcCompat="@drawable/ic_switch_holo_dark"
+                android:contentDescription="@string/switch_role" />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/logout"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_logout_holo_dark"
+                android:contentDescription="@string/logout" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

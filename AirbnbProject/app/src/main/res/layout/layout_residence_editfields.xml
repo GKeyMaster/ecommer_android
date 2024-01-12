@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/back_toolbar"
+        android:id="@+id/include" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_below="@+id/include"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvResults"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/customultiple"
+                android:layout_below="@id/tvResults"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include"
+                    android:layout_marginBottom="@dimen/height_of_footer"
+                    android:id="@+id/linearLayout"
+                    android:orientation="horizontal">
+                    <include layout="@layout/recycler_main" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAddPhots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_photos"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_type"
+                android:layout_below="@+id/customultiple"
+                android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/residence_select_type" />
+                <Spinner android:id="@+id/etType" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_type"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="@string/residence_title"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etTitle"
+                android:ems="10"
+                android:hint="@string/about"
+                android:inputType="textMultiLine|textPersonName" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etAbout"
+                android:ems="10"
+                android:hint="@string/residence_address"
+                android:inputType="textPostalAddress"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/etAddress"
+                android:inputType="textPersonName"
+                android:hint="@string/residence_city"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/etCity"
+                android:inputType="textPersonName"
+                android:hint="@string/residence_country"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etAmenities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/etCountry"
+                android:inputType="textMultiLine|textPersonName"
+                android:hint="@string/residence_amenities"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+            <EditText
+                android:id="@+id/etFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etAmenities"
+                android:ems="10"
+                android:hint="@string/floor"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etRooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etFloor"
+                android:ems="10"
+                android:hint="@string/rooms"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etBaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etRooms"
+                android:ems="10"
+                android:hint="@string/baths"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:id="@+id/checkboxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/etBaths">
+
+                <CheckBox
+                    android:id="@+id/cbKitchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/kitchen" />
+
+                <CheckBox
+                    android:id="@+id/cbLivingRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/living_room" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/checkboxes"
+                android:ems="10"
+                android:hint="@string/view"
+                android:inputType="textMultiLine|textPersonName" />
+
+            <EditText
+                android:id="@+id/etGuests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etView"
+                android:ems="10"
+                android:hint="@string/guests"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etMinPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etGuests"
+                android:ems="10"
+                android:hint="@string/minimum_price"
+                android:inputType="numberDecimal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etAdditionalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etMinPrice"
+                android:ems="10"
+                android:hint="@string/additional_cost"
+                android:inputType="numberDecimal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:id="@+id/availabilitystart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/etAdditionalCost">
+
+                <ImageButton
+                    android:id="@+id/btnStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:contentDescription="@string/available_start_date" />
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/available_start_date"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/availabilityend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/availabilitystart">
+
+                <ImageButton
+                    android:id="@+id/btnEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:contentDescription="@string/available_end_date" />
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/available_end_date"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etCancellationPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/availabilityend"
+                android:inputType="textMultiLine|textPersonName"
+                android:hint="@string/cancellation_policy"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/etRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/etCancellationPolicy"
+                android:inputType="textMultiLine|textPersonName"
+                android:hint="@string/rules"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/ibContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:srcCompat="@mipmap/ic_save"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:contentDescription="@string/save_residence" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">AirbnbProject</string>
+
+    <!-- General in Activities -->
+    <string name="welcome">Welcome to Airbnb App!</string>
+    <string name="logo">Airbnb Logo</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="no_account_register">No account yet? Create one</string>
+    <string name="about">About</string>
+    <string name="details">Details</string>
+    <string name="home">Home</string>
+    <string name="inbox">Inbox</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Log Out</string>
+    <string name="switch_role">Switch Role</string>
+    <string name="name">Name</string>
+    <string name="period">Period</string>
+    <string name="title">Title</string>
+
+    <!-- TYPES OF RESIDENCES -->
+    <string-array name="residence_types_array">
+        <item>Apartment</item>
+        <item>House</item>
+        <item>Bed and Breakfast</item>
+        <item>Shared Room</item>
+        <item>Studio</item>
+        <item>Hostel</item>
+        <item>Loft</item>
+        <item>Townhouse</item>
+        <item>Condominium</item>
+        <item>Bungalow</item>
+        <item>Cabin</item>
+        <item>Villa</item>
+        <item>Castle</item>
+        <item>Dorm</item>
+        <item>Treehouse</item>
+        <item>Boat</item>
+        <item>Plane</item>
+        <item>RV</item>
+        <item>Igloo</item>
+        <item>Lighthouse</item>
+        <item>Yurt</item>
+        <item>Cave</item>
+        <item>Island</item>
+        <item>Tent</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- RESIDENCES COLUMNS -->
+    <string name="residence_view">View Residence</string>
+    <string name="residence_title">Residence Title</string>
+    <string name="residence_photos">Residence Photos</string>
+    <string name="residence_image">Residence Image</string>
+    <string name="representative_photo">Representative Photo</string>
+    <string name="residence_type">Type</string>
+    <string name="residence_address">Address</string>
+    <string name="residence_city">Residence City</string>
+    <string name="residence_country">Residence Country</string>
+    <string name="residence_host">Host Name</string>
+    <string name="host_profile_image">Host Profile Image</string>
+    <string name="residence_about_this_residence">About this Residence</string>
+    <string name="residence_provide_amenities">What we will provide</string>
+    <string name="residence_amenities">Amenities</string>
+    <string name="residence_our_cancellation_policy">Our Cancellation Policy</string>
+    <string name="residence_guest_requirements">Guest requirements</string>
+    <string name="residence_about_your_host">About your host</string>
+    <string name="residence_about_host">"About host</string>
+    <string name="residence_where">Where you will find us</string>
+    <string name="residence_guests_number">Number of guests</string>
+    <string name="residence_availability">Availability</string>
+    <string name="residence_price">Price</string>
+    <string name="residence_book_now">Book now</string>
+
+    <!-- EDIT RESIDENCE COLUMNS -->
+    <string name="residence_add_new">Add Residence</string>
+    <string name="residence_upload_photo">Upload Photo</string>
+    <string name="floor">Floor</string>
+    <string name="rooms">Rooms</string>
+    <string name="baths">Baths</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="living_room">Living Room</string>
+    <string name="view">View</string>
+    <string name="space_area">Space Area</string>
+    <string name="guests">Guests</string>
+    <string name="minimum_price">Minimum Price</string>
+    <string name="additional_cost">Additional cost per guest</string>
+    <string name="available_start_date">Available Start Date</string>
+    <string name="available_end_date">Available End Date</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="rules">Rules</string>
+    <string name="residence_select_type">Select type of residence</string>
+    <string name="save_residence">Save Residence</string>
+    <string name="add_photos">Add Photos</string>
+
+    <!-- PROFILE COLUMNS -->
+    <string name="profile_edit">Edit Profile</string>
+    <string name="profile_welcome">Welcome</string>
+    <string name="profile_delete_photo">Delete Profile Photo</string>
+    <string name="profile_upload_photo">Upload Profile Photo</string>
+    <string name="profile_first_name">First Name</string>
+    <string name="profile_last_name">Last Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_number">Phone Number</string>
+    <string name="profile_country">Country</string>
+    <string name="profile_city">City</string>
+    <string name="profile_date_of_birth">Birth Date</string>
+    <string name="profile_save_changes">Save changes</string>
+    <string name="user_image">Profile Image</string>
+    <string name="contact_host">Contact Host</string>
+
+    <!-- REGISTER COLUMNS -->
+    <string name="already_member_login">Already a member? Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="reenter_pswd">Re-enter Password</string>
+
+    <!-- MESSAGE COLUMNS -->
+    <string name="message_write">Write your message here</string>
+    <string name="message_send">Send</string>
+    <string name="message_subject">Subject</string>
+
+    <!-- REVIEWS -->
+    <string name="reviews_rate_residence">Rate the Residence</string>
+    <string name="reviews_write">Write your review</string>
+    <string name="reviews_send">SEND</string>
+    <string name="reviews_comment">Comment</string>
+
+    <!-- SEARCH -->
+    <string name="anywhere">Anywhere</string>
+    <string name="anywhere_anytime_oneguest">Anywhere  - Anytime - One guest</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="one_guest">One guest</string>
+    <string name="search">Search</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+</resources>

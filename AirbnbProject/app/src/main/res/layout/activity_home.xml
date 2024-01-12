@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="gr.uoa.di.airbnbproject.HomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maincontainer">
+        <!--android:fitsSystemWindows="true"-->
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            app:expanded="false"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:fitsSystemWindows="true">
+                <!--app:expandedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded"-->
+                <!--app:contentScrim="?attr/colorPrimary"-->
+                <!-- |enterAlways|enterAlwaysCollapsed -->
+
+                <include layout="@layout/search_list" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <RelativeLayout
+                android:id="@+id/searchbarcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/search"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:drawableStart="@android:drawable/ic_menu_search"
+                    android:hint="@string/anywhere_anytime_oneguest"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:minHeight="?attr/actionBarSize"
+                    android:fitsSystemWindows="true"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentTop="true"
+                    android:animateLayoutChanges="true"
+                    android:weightSum="1"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ProgressBar
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true" />
+
+        <include layout="@layout/recycler_main"
+            android:id="@+id/recyclermain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_of_footer"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/maincontainer"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include android:id="@+id/includefooter" layout="@layout/footer" />
+    </LinearLayout>
+
+</RelativeLayout>

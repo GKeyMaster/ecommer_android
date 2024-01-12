@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:layout_height="wrap_content">
+
+   <include layout="@layout/back_toolbar"
+       android:id="@+id/include"/>
+
+    <ListView
+        android:id="@+id/reviewslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/rate"
+        android:layout_marginBottom="100dp"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector">
+    </ListView>
+
+
+    <include
+        layout="@layout/layout_review"
+        android:id="@+id/rate"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
